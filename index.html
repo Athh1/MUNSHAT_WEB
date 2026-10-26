@@ -48,7 +48,7 @@ footer{border-top:1px solid #ffffff12;padding:22px 0 30px;color:#788696;font-siz
     <button class="navcard" data-page="reports"><span class="ico">▣</span><strong><span class="nav-number">03</span> موقع تقارير العمليات</strong><small>التقارير، العمليات، النواب والمسمى الميداني</small></button>
     <a class="navcard" href="https://canva.link/e22y3xayn3fe5cp" target="_blank" rel="noopener noreferrer"><span class="ico">▧</span><strong><span class="nav-number">04</span> مستند الفرد الأساسي</strong><small>مستند تعريفي للقطاع بشكل شامل</small></a>
     <button class="navcard" data-page="laws"><span class="ico">⚖</span><strong><span class="nav-number">05</span> قوانين القطاع</strong><small>عرض الأنظمة والتعليمات مرتبة حسب القانون</small></button>
-    <a class="navcard" href="https://command-reward-telegram.lovable.app" target="_blank" rel="noopener noreferrer"><span class="ico">♜</span><strong><span class="nav-number">06</span> البوابة القيادية</strong><small>بوابة القيادة والمكافآت</small></a>
+    <button class="navcard" data-page="leadership"><span class="ico">♜</span><strong><span class="nav-number">06</span> البوابة القيادية</strong><small>بوابة القيادة والمكافآت — تتطلب رمز دخول</small></button>
   </nav>
 
   <main class="content">
@@ -64,7 +64,7 @@ footer{border-top:1px solid #ffffff12;padding:22px 0 30px;color:#788696;font-siz
         <article class="resource"><span class="ico">▣</span><h3>تقارير العمليات</h3><p>الموقع المخصص لتقارير العمليات والنواب والمسمّيات الميدانية.</p><button class="primarybtn" data-go="reports">فتح التقارير ←</button></article>
         <article class="resource"><span class="ico">⚖</span><h3>قوانين القطاع</h3><p>اقرأ التعليمات والبروتوكولات التنظيمية في بطاقات واضحة.</p><button class="primarybtn" data-go="laws">استعراض القوانين ←</button></article>
         <article class="resource"><span class="ico">▧</span><h3>مستند الفرد الأساسي</h3><p>مستند تعريفي للقطاع بشكل شامل، يجمع المعلومات الأساسية للفرد.</p><a class="primarybtn" href="https://canva.link/e22y3xayn3fe5cp" target="_blank" rel="noopener noreferrer">فتح المستند ↗</a></article>
-        <article class="resource"><span class="ico">♜</span><h3>البوابة القيادية</h3><p>قسم قيادي قيد الإنشاء، ويتطلب رمز دخول.</p><a class="primarybtn" href="https://command-reward-telegram.lovable.app" target="_blank" rel="noopener noreferrer">دخول البوابة ↗</a></article>
+        <article class="resource"><span class="ico">♜</span><h3>البوابة القيادية</h3><p>بوابة القيادة والمكافآت — يلزم إدخال رمز الدخول أولاً.</p><button class="primarybtn" data-go="leadership">دخول القسم ←</button></article>
         <article class="resource"><span class="ico">✦</span><h3>تنبيه تنظيمي</h3><p>يرجى التأكد من الرجوع إلى أحدث نسخة معتمدة من القوانين والجدول الرسمي.</p><span class="tag" style="align-self:flex-start">المرجع المعتمد أولاً</span></article>
       </div>
     </section>
@@ -94,8 +94,8 @@ footer{border-top:1px solid #ffffff12;padding:22px 0 30px;color:#788696;font-siz
     </section>
 
     <section id="page-leadership" class="hidden">
-      <div class="section-head"><div><h2>البوابة القيادية</h2><p>منطقة خاصة قيد الإنشاء.</p></div><button class="backbtn" data-go="home">العودة للرئيسية</button></div>
-      <div class="lock-card"><div class="lock-icon">♜</div><h2>دخول البوابة القيادية</h2><p>أدخل رمز الدخول للوصول إلى صفحة قيد الإنشاء.</p><form id="codeForm"><div class="code-row"><input id="leadCode" inputmode="numeric" maxlength="8" placeholder="••••" aria-label="رمز الدخول" required><button class="primarybtn" type="submit">تحقق</button></div></form><p id="codeError" class="error" aria-live="polite"></p><div id="leadUnlocked" class="under-construction hidden"><strong>تم فتح القسم التجريبي</strong><p>البوابة القيادية قيد الإنشاء وسيتم إضافة محتواها لاحقاً.</p></div></div>
+      <div class="section-head"><div><h2>البوابة القيادية</h2><p>أدخل رمز الدخول الصحيح للانتقال إلى بوابة القيادة والمكافآت.</p></div><button class="backbtn" data-go="home">العودة للرئيسية</button></div>
+      <div class="lock-card"><div class="lock-icon">♜</div><h2>دخول البوابة القيادية</h2><p>لن يتم فتح البوابة القيادية إلا بعد إدخال الرمز الصحيح.</p><form id="codeForm"><div class="code-row"><input id="leadCode" type="password" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="أدخل رمز الدخول" aria-label="رمز الدخول" autocomplete="off" required><button class="primarybtn" type="submit">تحقق ودخول</button></div></form><p id="codeError" class="error" aria-live="polite"></p><div id="leadUnlocked" class="under-construction hidden"><strong>تم فتح القسم التجريبي</strong><p>جارٍ تحويلك إلى البوابة القيادية...</p></div></div>
     </section>
   </main>
   <footer>بوابة أمن المنشآت · مقاطعة العاذرية<br>واجهة تنظيمية غير رسمية — يرجى الرجوع إلى قيادة القطاع لاعتماد التعليمات.</footer>
@@ -299,9 +299,10 @@ document.getElementById('codeForm').addEventListener('submit',e=>{
   e.preventDefault();
   const input=document.getElementById('leadCode');
   const err=document.getElementById('codeError');
-  if(input.value.trim()==='5375'){
+  if(input.value.trim()==='0903'){
     err.textContent='';
     document.getElementById('leadUnlocked').classList.remove('hidden');
+    window.location.href='https://command-reward-telegram.lovable.app';
   } else {
     err.textContent='رمز الدخول غير صحيح، حاول مرة أخرى.';
     document.getElementById('leadUnlocked').classList.add('hidden');

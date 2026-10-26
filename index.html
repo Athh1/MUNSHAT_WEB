@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0e12">
+<title>بوابة أمن المنشآت | مقاطعة العاذرية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090d11;--panel:#111820;--panel2:#151e27;--line:#293541;--gold:#f5b51b;--gold2:#ffcf55;--text:#f4f6f8;--muted:#a8b5c4;--green:#42c779;--shadow:0 18px 60px #0008}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#263323 0,transparent 36%),linear-gradient(#090d11,#0b1016 70%,#090d11);color:var(--text);font-family:"Alexandria","IBM Plex Sans Arabic",Tahoma,sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#8b9aa60b 1px,transparent 1px),linear-gradient(90deg,#8b9aa60b 1px,transparent 1px);background-size:42px 42px;z-index:-1}
+a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #ffffff12;color:var(--muted);font-size:12px;gap:12px}.status{display:inline-flex;align-items:center;gap:8px}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px #42c77999}
+.hero{text-align:center;padding:38px 0 24px}.seal{width:116px;height:116px;object-fit:contain;border-radius:50%;background:#fffdf0;padding:5px;border:2px solid var(--gold);box-shadow:0 0 0 7px #f5b51b10,0 18px 45px #0008}.eyebrow{margin:22px 0 8px;color:var(--gold2);font-size:12px;font-weight:700;letter-spacing:1.5px}.hero h1{font-size:clamp(27px,4.3vw,49px);line-height:1.5;margin:0;font-weight:800;letter-spacing:-1.2px}.hero h1 span{color:var(--gold)}.subtitle{color:var(--muted);font-size:14px;line-height:2;margin:8px auto 0;max-width:680px}
+.hero-tags{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px}.tag{border:1px solid #f5b51b4c;color:#ffd56c;background:#f5b51b0d;padding:7px 12px;border-radius:99px;font-size:11px}
+.mainnav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:24px 0 22px}.navcard{position:relative;display:flex;flex-direction:column;align-items:flex-start;text-align:right;gap:10px;min-height:150px;padding:19px 17px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#18212a,#10161d);transition:.2s;cursor:pointer;color:var(--text);overflow:hidden}.navcard:after{content:"";position:absolute;inset:auto -25px -45px auto;width:110px;height:110px;border-radius:50%;background:#f5b51b0d;transition:.2s}.navcard:hover,.navcard.active{border-color:#f5b51b9c;transform:translateY(-3px);box-shadow:0 12px 30px #0005}.navcard.active{background:linear-gradient(145deg,#322817,#151a1e)}.navcard .ico{display:grid;place-items:center;width:39px;height:39px;border-radius:12px;background:#f5b51b16;color:var(--gold);font-size:20px;border:1px solid #f5b51b2c}.navcard strong{font-size:14px;line-height:1.7}.navcard small{font-size:10px;line-height:1.9;color:var(--muted);font-weight:400}
+.content{padding-bottom:46px}.welcome{display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid var(--line);border-radius:18px;padding:25px;background:linear-gradient(120deg,#151b22,#10151b);box-shadow:var(--shadow)}.welcome h2{font-size:19px;margin:0 0 8px}.welcome p{color:var(--muted);font-size:12px;line-height:2;margin:0;max-width:760px}.mini-seal{width:58px;opacity:.8;flex-shrink:0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:5px 0 20px}.section-head h2{margin:0;font-size:25px}.section-head p{color:var(--muted);font-size:12px;line-height:1.9;margin:7px 0 0}.backbtn,.primarybtn{border:1px solid #f5b51b6b;background:#f5b51b;color:#15130b;padding:10px 16px;border-radius:10px;cursor:pointer;font-weight:700;font-size:12px;white-space:nowrap}.backbtn:hover,.primarybtn:hover{background:#ffd05b}
+.resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.resource{border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#151d25,#10161c);padding:22px;display:flex;flex-direction:column;gap:12px;min-height:195px}.resource .ico{font-size:25px;color:var(--gold)}.resource h3{font-size:16px;margin:0}.resource p{font-size:12px;line-height:2;color:var(--muted);margin:0;flex:1}.resource .primarybtn{align-self:flex-start}
+.lawtools{display:flex;gap:10px;align-items:center;margin-bottom:18px}.search{width:100%;background:#111820;border:1px solid var(--line);border-radius:11px;padding:13px 15px;color:var(--text);outline:none}.search:focus{border-color:var(--gold)}.law-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.law{background:linear-gradient(145deg,#151d25,#0f151b);border:1px solid var(--line);border-radius:15px;overflow:hidden}.law summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:13px;padding:17px}.law summary::-webkit-details-marker{display:none}.law-num{display:grid;place-items:center;min-width:39px;height:39px;border-radius:11px;background:#f5b51b17;color:var(--gold);font-weight:800;border:1px solid #f5b51b36}.law-title{font-weight:700;font-size:13px;line-height:1.8;flex:1}.chev{color:var(--gold);transition:transform .2s}.law[open] .chev{transform:rotate(180deg)}.law-body{border-top:1px solid #ffffff12;padding:17px 19px 20px;color:#d0d8e0;font-family:"IBM Plex Sans Arabic","Alexandria",sans-serif;font-size:13px;line-height:2.15;white-space:pre-line}.law-body p{margin:0 0 9px}.law-body p:last-child{margin-bottom:0}.law-note{color:var(--gold2);font-size:11px;margin-top:12px}
+.lock-card{max-width:480px;margin:20px auto;padding:30px;border:1px solid var(--line);background:linear-gradient(145deg,#18212a,#10161d);border-radius:18px;text-align:center;box-shadow:var(--shadow)}.lock-icon{font-size:34px;color:var(--gold)}.lock-card h2{margin:10px 0;font-size:21px}.lock-card p{font-size:12px;color:var(--muted);line-height:2}.code-row{display:flex;gap:8px;margin-top:18px}.code-row input{min-width:0;flex:1;background:#0b1117;border:1px solid var(--line);border-radius:10px;color:white;text-align:center;letter-spacing:5px;padding:13px;outline:none}.error{color:#ff8181!important;min-height:20px}.under-construction{border:1px dashed #f5b51b6b;border-radius:14px;padding:23px;margin-top:16px;text-align:center;background:#f5b51b08}.under-construction strong{color:var(--gold2)}.hidden{display:none!important}
+footer{border-top:1px solid #ffffff12;padding:22px 0 30px;color:#788696;font-size:11px;text-align:center;line-height:2}
+@media(max-width:900px){.mainnav{grid-template-columns:repeat(3,minmax(0,1fr))}.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.wrap{width:min(100% - 22px,1180px)}.topbar{font-size:10px}.hero{padding-top:28px}.seal{width:92px;height:92px}.mainnav{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.navcard{min-height:133px;padding:14px}.navcard strong{font-size:12px}.navcard small{font-size:10px}.welcome{padding:18px}.welcome h2{font-size:16px}.mini-seal{width:43px}.resource-grid,.law-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.lawtools{flex-direction:column}.code-row{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="status"><span class="dot"></span><span>بوابة القطاع · النظام الإلكتروني</span></div>
+    <div>مقاطعة العاذرية <span style="color:var(--gold)">/</span> أمن المنشآت</div>
+  </div>
+
+  <header class="hero">
+    <img class="seal" src="assets/logo.png" alt="شعار قوات أمن المنشآت" onerror="this.style.display='none'">
+    <div class="eyebrow">المنصة التنظيمية الرسمية</div>
+    <h1>بوابة <span>أمن المنشآت</span></h1>
+    <p class="subtitle">مرجع القطاع في مقاطعة العاذرية — الأنظمة، التقارير، الجداول والبوابات القيادية في واجهة واحدة.</p>
+    <div class="hero-tags"><span class="tag">نظام القطاع</span><span class="tag">مرجع المنسوبين</span><span class="tag">تحديثات وتعليمات</span></div>
+  </header>
+
+  <nav class="mainnav" aria-label="القائمة الرئيسية">
+    <button class="navcard" data-page="official"><span class="ico">▤</span><strong>الجدول الرسمي</strong><small>منسوبو القطاع، شروط الترقية، المركبات وغيرها</small></button>
+    <button class="navcard" data-page="military"><span class="ico">◈</span><strong>البوابة العسكرية</strong><small>المرجع الأول للبرقيات والصوادر والقيفات العسكرية</small></button>
+    <button class="navcard" data-page="reports"><span class="ico">▣</span><strong>موقع تقارير العمليات</strong><small>التقارير، العمليات، النواب والمسمى الميداني</small></button>
+    <button class="navcard" data-page="laws"><span class="ico">⚖</span><strong>قوانين القطاع</strong><small>عرض الأنظمة والتعليمات مرتبة حسب القانون</small></button>
+    <button class="navcard" data-page="leadership"><span class="ico">♜</span><strong>البوابة القيادية</strong><small>قسم خاص قيد الإنشاء ويتطلب رمز دخول</small></button>
+  </nav>
+
+  <main class="content">
+    <section id="page-home">
+      <div class="welcome">
+        <div><h2>مرحباً بك في بوابة أمن المنشآت</h2><p>اختر القسم المطلوب من القائمة أعلاه للوصول إلى الجداول الرسمية والبوابات المعتمدة أو لقراءة قوانين القطاع. صُممت البوابة لتكون واضحة وسريعة على الكمبيوتر والجوال.</p></div>
+        <img class="mini-seal" src="assets/logo.png" alt="">
+      </div>
+      <div style="margin:28px 0 14px" class="section-head"><div><h2>الخدمات الرئيسية</h2><p>وصول سريع إلى أكثر أقسام القطاع استخداماً.</p></div></div>
+      <div class="resource-grid">
+        <article class="resource"><span class="ico">▤</span><h3>الجدول الرسمي</h3><p>مرجع منسوبي القطاع وشروط الترقية والمركبات والبيانات التنظيمية.</p><button class="primarybtn" data-go="official">فتح القسم ←</button></article>
+        <article class="resource"><span class="ico">◈</span><h3>البوابة العسكرية</h3><p>بوابة البرقيات والصوادر والمسؤوليات والقيفات العسكرية.</p><button class="primarybtn" data-go="military">فتح البوابة ←</button></article>
+        <article class="resource"><span class="ico">▣</span><h3>تقارير العمليات</h3><p>الموقع المخصص لتقارير العمليات والنواب والمسمّيات الميدانية.</p><button class="primarybtn" data-go="reports">فتح التقارير ←</button></article>
+        <article class="resource"><span class="ico">⚖</span><h3>قوانين القطاع</h3><p>اقرأ التعليمات والبروتوكولات التنظيمية في بطاقات واضحة.</p><button class="primarybtn" data-go="laws">استعراض القوانين ←</button></article>
+        <article class="resource"><span class="ico">♜</span><h3>البوابة القيادية</h3><p>قسم قيادي قيد الإنشاء، ويتطلب رمز دخول.</p><button class="primarybtn" data-go="leadership">دخول القسم ←</button></article>
+        <article class="resource"><span class="ico">✦</span><h3>تنبيه تنظيمي</h3><p>يرجى التأكد من الرجوع إلى أحدث نسخة معتمدة من القوانين والجدول الرسمي.</p><span class="tag" style="align-self:flex-start">المرجع المعتمد أولاً</span></article>
+      </div>
+    </section>
+
+    <section id="page-official" class="hidden">
+      <div class="section-head"><div><h2>الجدول الرسمي</h2><p>منسوبو القطاع، شروط الترقية، المركبات، والبيانات التنظيمية.</p></div><button class="backbtn" data-go="home">العودة للرئيسية</button></div>
+      <div class="resource-grid">
+        <article class="resource"><span class="ico">▤</span><h3>الجدول الرسمي للقطاع</h3><p>المرجع الذي يضم بيانات المنسوبين وشروط الترقية والمركبات وغيرها من تفاصيل القطاع.</p><a class="primarybtn" href="https://docs.google.com/spreadsheets/d/1KaicZaAAphqr5d_OvCNiXwaGc4HZurZrKDBzx8LlnNw/edit?sharingaction=ownershiptransfer&gid=2137278746#gid=2137278746" target="_blank" rel="noopener noreferrer">فتح الجدول الرسمي ↗</a></article>
+      </div>
+    </section>
+
+    <section id="page-military" class="hidden">
+      <div class="section-head"><div><h2>البوابة العسكرية</h2><p>البوابة والمرجع الأول للبرقيات وصوادر كل مسؤولية، وتسهّل كتابة الصوادر وتنزيل القيفات العسكرية.</p></div><button class="backbtn" data-go="home">العودة للرئيسية</button></div>
+      <div class="resource-grid"><article class="resource"><span class="ico">◈</span><h3>بوابة البرقيات والصوادر</h3><p>انتقل إلى البوابة العسكرية لإعداد الصوادر والوصول إلى القيفات.</p><a class="primarybtn" href="https://hmoud41.github.io/amn-almunshaat/" target="_blank" rel="noopener noreferrer">دخول البوابة العسكرية ↗</a></article></div>
+    </section>
+
+    <section id="page-reports" class="hidden">
+      <div class="section-head"><div><h2>موقع تقارير العمليات</h2><p>الموقع الرسمي للعمليات ونائب العمليات، ويسهّل كتابة التقرير وتسجيل المسمّى الميداني.</p></div><button class="backbtn" data-go="home">العودة للرئيسية</button></div>
+      <div class="resource-grid"><article class="resource"><span class="ico">▣</span><h3>نظام تقارير العمليات</h3><p>فتح نظام التقارير لتسجيل العمليات والبيانات الميدانية.</p><a class="primarybtn" href="https://hmoud41.github.io/alathariyah-reports/" target="_blank" rel="noopener noreferrer">دخول موقع التقارير ↗</a></article></div>
+    </section>
+
+    <section id="page-laws" class="hidden">
+      <div class="section-head"><div><h2>قوانين القطاع</h2><p>اقرأ كل قانون بالضغط على عنوانه، واستخدم البحث للوصول إلى التعليمات بسرعة.</p></div><button class="backbtn" data-go="home">العودة للرئيسية</button></div>
+      <div class="lawtools"><input id="lawSearch" class="search" type="search" placeholder="ابحث عن قانون أو كلمة داخله..." aria-label="البحث في القوانين"></div>
+      <div id="lawGrid" class="law-grid"></div>
+      <p class="law-note">تنبيه: النصوص المعروضة مبنية على المحتوى المرسل، وقد تتضمن أخطاء إملائية في النص الأصلي. اعتمدوا النسخة الصادرة عن قيادة القطاع عند التعارض.</p>
+    </section>
+
+    <section id="page-leadership" class="hidden">
+      <div class="section-head"><div><h2>البوابة القيادية</h2><p>منطقة خاصة قيد الإنشاء.</p></div><button class="backbtn" data-go="home">العودة للرئيسية</button></div>
+      <div class="lock-card"><div class="lock-icon">♜</div><h2>دخول البوابة القيادية</h2><p>أدخل رمز الدخول للوصول إلى صفحة قيد الإنشاء.</p><form id="codeForm"><div class="code-row"><input id="leadCode" inputmode="numeric" maxlength="8" placeholder="••••" aria-label="رمز الدخول" required><button class="primarybtn" type="submit">تحقق</button></div></form><p id="codeError" class="error" aria-live="polite"></p><div id="leadUnlocked" class="under-construction hidden"><strong>تم فتح القسم التجريبي</strong><p>البوابة القيادية قيد الإنشاء وسيتم إضافة محتواها لاحقاً.</p></div></div>
+    </section>
+  </main>
+  <footer>بوابة أمن المنشآت · مقاطعة العاذرية<br>واجهة تنظيمية غير رسمية — يرجى الرجوع إلى قيادة القطاع لاعتماد التعليمات.</footer>
+</div>
+<script>
+const laws = [
+["قانون نداء الاستغاثة",`نداء الاستغاثة
+
+1- يسمح للمواطنين المرور على أطراف النداء، ويسمح لهم المرور في الطرق السريعة. يمنع إطلاق النار على الكفرات في الطرق السريعة.
+
+2- يسمح بإطلاق النار على الكفرات عند دخول المواطن نداء استغاثة. في حال عدم الانصياع والمغادرة يحق لك إسقاطه بشكل مباشر.
+
+3- نداء الاستغاثة وطلب F10 (عضلة لمدة 3 ثوانٍ) أثناء تواجد عدد قليل من المجرمين والاشتباك الخفيف، وبالعادة يكون أثناء انتهاء الاشتباك. طريقة رفعه عبر الإجراء المعتمد لدى القطاع.`],
+["قانون المركبات السرية",`1- يمنع الخروج بالمركبات السرية داخل حرم الميناء.
+
+2- يسمح بالخروج بالمركبات السرية في لوس سانتوس للضباط دون الحاجة لتفعيل البحث الجنائي.`],
+["قانون التعامل مع الهاربين",`1- في حال كان المواطن أعزل وتم كشفه، يتم القبض عليه باستخدام التيزر أو طرحه على الأرض.
+
+2- يحق للعسكري إسقاط المهرب فوراً في حال كان يحمل سلاحاً.
+
+3- في حال قام شخص بإطلاق النار بدون هدف أو بحجة تشتيت العسكر، أو خارج سور الميناء، يحق لك إسقاطه في البحر مع حفظ التصوير.
+
+4- إذا كان المهرب واقفاً خلف الشايك أو الشبك ولم يلتزم بتمثيل هروبه، يجب تنبيهه بتمثيل هروبه. وفي حال عدم الانصياع يحق لك كلبشته والتعامل معه بدون سحب ممنوعات.`],
+["قانون تفتيش البوابات",`أولاً: على مشرف بوابة الدخول إعلان افتتاح الميناء عبر قائمة F6. ويتم الاستعلام بالآتي: الهوية، ثم تفتيش الشخص خارج المركبة، ثم تفتيش المركبة والتأكد من حمولتها. إذا كانت شاحنة يتم تفتيش رأس الشاحنة.
+
+إعطاء المواطن مخالفاته إن وجدت مع رسومه.
+
+يمنع دخول المواطن بقناع أو سترة ضد الرصاص على الصدر ويجب إزالتها.
+
+يمنع دخول أكثر من شخص بمركبة واحدة.
+
+يُخيّر المواطن بين مصادرة السلاح المرخص أو إرجاعه.
+
+مخالفة حمل أغراض بالحقيبة تعطى لأصحاب الـ60 كيلو وما فوق، أما أصحاب الـ40 كيلو فمعفيون من المخالفة.
+
+تعطى رسوم الدخول للداخلين بدون راعٍ على حسب حمولة المركبة.
+
+يمنع أصحاب العشر سجلات وما أكثر من دخول الميناء. ويمنع دخول الميناء بلباس غير مخصص للعمل، ويشمل القانون القناع والدرع.
+
+يتم إعطاء رسوم حمولات المركبات جميعها إذا كانت مسحوبة بقلص.`],
+["بروتوكول الاصطفاف العسكري",`دخول الصف عبر الاستعداد لضابط الصف مع أخذ إذن الدخول (للأفراد).
+
+دخول الصف عبر التحية للضابط مع أخذ إذن الدخول (للضباط).
+
+يمنع الأكل والشرب في الاصطفاف.
+
+يتم توزيع الأفراد من قبل ضابط صف الأفراد (أقدم فرد).
+
+يتم توزيع الضباط من ملازم إلى مقدم من قبل أقدم ضابط في الصف.
+
+يتم توزيع كبار الضباط من عقيد إلى لواء من قبل أقدم ضابط في الصف.
+
+الإيعاز العسكري يكون كالآتي:
+• العموم راحة ثابت شرطي 1.
+• استعد، استعد.
+• العموم حسب البرنامج داوم مباشر؛ تحية لضابط الصف عن طريق (شرطي 2). في حال دق تحية ونزل يده، تنزل يدك مباشرة وتباشر الميدان.
+
+في حال وصل ضابط الصف وبدأ الاصطفاف، يسمح للعسكري الذي أعلى رتبة من ضابط الصف الموجود أن يطلب من العسكري الأقل منه رتبة الرجوع للخلف في الاصطفاف.`],
+["طريقة التبليغ في الراديو",`1- يجب الإبلاغ في الراديو في حال تم رصد مهرب مع ذكر المنطقة أو الموقع.
+
+2- يجب على العسكري عدم قطع البلاغ نهائياً، ويتم الإبلاغ بشكل احترافي.
+
+3- يمنع التوجه للحالات إلا في حال تم توجيهك في الموجة من قبل المسؤولين.
+
+4- يمنع مقاومة أكثر من شخصين يحملون أسلحة؛ يجب عليك طلب الدعم من مركز العمليات.`],
+["طريقة التعامل مع الحالات داخل وخارج الميناء",`1- في حال أسقطت مهرباً يجب أن تكمل السيناريو معه إلى لحظة السجن.
+
+2- يسمح بمصادرة الممنوعات بجميع أنواعها داخل الميناء وخارجه.
+
+3- يجب مراجعة قانون السجلات الجنائية للأسلحة داخل الميناء.
+
+4- يجب التقيد بالأنظمة المرورية داخل وخارج الميناء إلا في حالة البلاغات مع تشغيل السفتي.`],
+["تنظيم السير",`1- يجب توجيه وحدات لتنظيم السير خارج الميناء في تمام الساعة 04:00 AM.
+
+2- يتم تخصيص الأشخاص المتخصصين في تنظيم السير.
+
+3- المسمى الميداني في الراديو: H-000 | تنظيم سير 1.
+
+يكون عدد وحدات تنظيم السير وحدتين كحد أقصى.
+
+في حال احتياج أمن 1 للمركبات يجب تبليغ وحدات تنظيم السير من قبل مشرف أمن 1.
+
+يسمح لوحدات تنظيم السير عدم حضور الاصطفاف العسكري، ويتم أخذ التوجيه من غرفة العمليات بعد انتهاء جميع المركبات في طابور الميناء.
+
+يجب أن تكون رتب الأشخاص المستلمين تنظيم السير من رتبة عريف فما فوق.
+
+المركبة المخصصة لتنظيم السير: دباب أمن المنشآت.
+
+يجب استعمال دباب أمن المنشآت في حال تم توجيهك كوحدة تنظيم سير خارج الميناء، ويمنع مباشرة تنظيم السير بأي مركبة.
+
+يسمح باستعمال دباب الأمن والحماية في حال تم افتتاح كراج التعديل والتزويد.
+
+يمنع المباشرة داخل الميناء أو في الشفت المسائي بالدباب لأي سبب كان.
+
+يمنع منعاً باتاً المباشرة بدباب أمن المنشآت ودباب الأمن والحماية إلا في تنظيم السير. في حال الانتهاء من تنظيم السير يجب تخزين الدباب ومباشرة دورية.
+
+هذا لما تقتضيه مصلحة قطاع أمن المنشآت بمقاطعة العاذرية. القانون قابل للتعديل أو الإضافة.`],
+["انتشار الوحدات داخل الميناء",`1- يمنع تجمع وحدتين أو أكثر في نفس الموقع، وجميع من في الموقع سيحاسب مهما كان سبب التجمع.
+
+2- يمنع المشي خلف زميلك في الميناء بدون سبب، وعدم الانتشار في الميناء يعرضك للمحاسبة.
+
+3- يمنع على أي شخص الثبوت في موقع لأكثر من 10 ثوانٍ؛ لابد من التحرك في الميناء.
+
+4- يحق للعسكري المباشرة في حالة أمامه مع تبليغ العمليات بنوع الحالة دون انتظار إذن التوجه.
+
+5- يمنع منعاً باتاً دخول المركز إلا في الحالات التالية: بعد أخذ إذن العمليات في حال تبديل المركبة أو أخذ كود 7 أو تسليم الممنوعات. خلاف ذلك تعرض نفسك للمحاسبة.`],
+["نظام الإجازات الداخلية",`يتم إعطاء جميع الأفراد من رتبة عريف إلى رتبة رئيس رقباء 72 ساعة كرصيد إجازات داخلية، ويتم تقسيم المدة على النحو التالي:
+
+1- أقل مدة: 8 ساعات.
+2- أعلى مدة: 24 ساعة.
+3- يحق لك كل 4 أيام طلب إجازة من رصيدك.
+4- يتم تجديد الرصيد تلقائياً شهرياً.
+
+ملاحظة: الإجازات تقديرية ويحق للشؤون الإدارية رفضها في حال عدم استيفاء الشروط.
+
+يمنع ذكر رتبتك أو منصبك داخل القطاع في الإجازة أو الإجرام بالعهدة العسكرية؛ وقد تصل العقوبة للفصل أو تكسير الرتبة في حال المخالفة. القوانين قابلة للتعديل أو الإضافة.`],
+["قانون تخطي المراجع",`1- يمنع منعاً باتاً التوجه لأحد القادة، ويستثنى من المنع حضرات الضباط.
+
+2- في حال كان لديك موضوع أو مشكلة، تتوجه لأحد الرقباء والضباط الموجودين.`],
+["قوانين أسلحة أمن المنشآت",`الجندي إلى رتبة جندي أول يستخدم العهدة العسكرية والسلاح: مسدس + مسدس مصغر.
+
+عريف فما فوق: شوزن + مسدس عيار 50.
+
+رقيب أول فما فوق: رشاش SMG.
+
+ملازم فما فوق: رشاش كاربون.
+
+ملازم أول فما فوق: رشاش كاربون سبيشل.
+
+قوانين الكاربون:
+يمنع استخدام الكاربون، ويستثنى من ذلك الحالات الآتية فقط:
+1- وجود خلية إرهابية عددها 4 وما فوق.
+2- في حال استخدام الرشاش أو الكاوبوي أو السنايبر من الطرف الآخر.
+3- القادة والنواب.`],
+["قوانين نظام الاستقالات",`يسمح بالاستقالة فقط من رتبة عريف وأعلى.
+
+لا يمكن الاستقالة من رتبة جندي وجندي أول.
+
+مخالفة ذلك تعرضك للفصل وغرامة مالية قدرها مليون، ومنع توظيف لمدة 7 أيام.`],
+["قوانين الإعادة للخدمة والتقاعد",`بسم الله الرحمن الرحيم
+
+تحديث شروط طلب الإعادة للخدمة في قطاع أمن المنشآت، ولن يتم إعادة أي شخص للخدمة وهو غير مكمل الشروط مهما كان السبب.
+
+الإعادة للخدمة تكون لمن كانت رتبته في قطاع أمن المنشآت من ملازم فما فوق فقط.
+
+يتم كسر رتبة الشخص المتقدم لإعادة الخدمة حسب الآتي:
+• من وقت الاستقالة مباشرة إلى 7 أيام: كسر رتبتين.
+• من 7 إلى 14 يوماً: كسر 3 رتب.
+• من 14 إلى 21 يوماً: كسر 4 رتب.
+• من 21 يوماً وأكثر: كسر 5 رتب.
+
+لابد من طلب إعادة الخدمة خلال 40 يوماً من تاريخ الاستقالة، وإلا سيتم رفض طلب الإعادة للخدمة.
+
+لابد أن يكون الشخص متميزاً في قطاع أمن المنشآت سابقاً وخالياً من المخالفات العسكرية.
+
+لن يتم إعادة الدورات التي تم أخذها في السابق، ولابد من حضور الدورات مرة أخرى.
+
+التقاعد لمن يحمل رتبة مقدم فما فوق.
+
+هذا لما تقتضيه مصلحة قطاع أمن المنشآت. القانون قابل للتعديل أو الإضافة.`],
+["قوانين السفر الداخلي للضباط",`السفر الداخلي:
+
+يسمح بالسفر الداخلي للضباط المتفاعلين في قطاع أمن المنشآت والحاصلين على حسن السيرة والسلوك أثناء الدوام العسكري. يتم ترشيح الأسماء من القيادة.
+
+مدة السفر الداخلي: 7 أيام من وقت نزول البرقية.
+
+يجب عدم ذكر منصبك أو رتبتك أو قطاعك أثناء السفر الداخلي، وخلاف ذلك تعرض نفسك للمحاسبة.
+
+القانون قابل للتعديل أو الإضافة.`]
+];
+
+const lawGrid = document.getElementById('lawGrid');
+function renderLaws(filter=''){
+  lawGrid.innerHTML='';
+  laws.forEach((law,i)=>{
+    const text=(law[0]+' '+law[1]).toLowerCase();
+    if(filter && !text.includes(filter.toLowerCase())) return;
+    const details=document.createElement('details'); details.className='law';
+    const summary=document.createElement('summary');
+    const num=document.createElement('span'); num.className='law-num'; num.textContent=String(i+1).padStart(2,'0');
+    const title=document.createElement('span'); title.className='law-title'; title.textContent=law[0];
+    const chev=document.createElement('span'); chev.className='chev'; chev.textContent='⌄';
+    summary.append(num,title,chev);
+    const body=document.createElement('div'); body.className='law-body';
+    law[1].split('\n\n').forEach(part=>{const p=document.createElement('p');p.textContent=part;body.appendChild(p)});
+    details.append(summary,body); lawGrid.appendChild(details);
+  });
+  if(!lawGrid.children.length){const p=document.createElement('p');p.textContent='لا توجد نتائج مطابقة للبحث.';p.style.color='var(--muted)';lawGrid.appendChild(p)}
+}
+renderLaws();
+document.getElementById('lawSearch').addEventListener('input',e=>renderLaws(e.target.value.trim()));
+function showPage(page){
+  document.querySelectorAll('[id^="page-"]').forEach(el=>el.classList.add('hidden'));
+  const target=document.getElementById('page-'+page); if(target) target.classList.remove('hidden');
+  document.querySelectorAll('.navcard').forEach(b=>b.classList.toggle('active',b.dataset.page===page));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
+document.getElementById('codeForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const input=document.getElementById('leadCode');
+  const err=document.getElementById('codeError');
+  if(input.value.trim()==='5375'){
+    err.textContent='';
+    document.getElementById('leadUnlocked').classList.remove('hidden');
+  } else {
+    err.textContent='رمز الدخول غير صحيح، حاول مرة أخرى.';
+    document.getElementById('leadUnlocked').classList.add('hidden');
+  }
+});
+</script>
+</body>
+</html>
